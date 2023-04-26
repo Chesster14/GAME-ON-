@@ -10,39 +10,46 @@ var message =
 var words = message.split(' ');
 
 // creating a questions array
-var questions= [
-// making an arrray of objects
-{
-  title:"What is the capitol of California?",
-  // putting choices in an array so that we can loop through them with a forLoop
-  choices: ["San Francisco", "San Diego", "Sacramento", "Las Vegas"],
-  answer: "Sacramento",  
-},
-{
-  title:"Which planet is the closest to the sun?",
-  // putting choices in an array so that we can loop through them with a forLoop
-  choices: ["Mercury", "Venus", "Earth", "Mars"],
-  answer: "Mercury",  
-},
-{
-  title:"What mountain is tallest from base to peak?",
-  // putting choices in an array so that we can loop through them with a forLoop
-  choices: ["Mount Fuji", "Mauna Kea", "Mount wannahockaloogie", "Mount Everest"],
-  answer: "Mauna Kea",  
-},
-{
-  title:"What is the sum of the first 10 prime numbers",
-  // putting choices in an array so that we can loop through them with a forLoop
-  choices: ["10", "169", "144", "129"],
-  answer: "129",  
-},
-{
-  title:"What year did joust come out?",
-  // putting choices in an array so that we can loop through them with a forLoop
-  choices: ["1982", "1984", "1986", "1979"],
-  answer: "1982",  
-},
+var questions = [
+  // making an arrray of objects
+  {
+    title: "What is the capital of California?",
+    // putting choices in an array so that we can loop through them with a forLoop
+    choices: ["San Francisco", "San Diego", "Sacramento", "Las Vegas"],
+    answer: "Sacramento",
+  },
+  {
+    title: "Which planet is the closest to the sun?",
+    // putting choices in an array so that we can loop through them with a forLoop
+    choices: ["Mercury", "Venus", "Earth", "Mars"],
+    answer: "Mercury",
+  },
+  {
+    title: "What mountain is tallest from base to peak?",
+    // putting choices in an array so that we can loop through them with a forLoop
+    choices: ["Mount Fuji", "Mauna Kea", "Mount wannahockaloogie", "Mount Everest"],
+    answer: "Mauna Kea",
+  },
+  {
+    title: "What is the sum of the first 10 prime numbers",
+    // putting choices in an array so that we can loop through them with a forLoop
+    choices: ["10", "169", "144", "129"],
+    answer: "129",
+  },
+  {
+    title: "What year did joust come out?",
+    // putting choices in an array so that we can loop through them with a forLoop
+    choices: ["1982", "1984", "1986", "1979"],
+    answer: "1982",
+  },
 ]
+//new function for questions
+function startgame(){
+//need to add event listeners to all of the questions
+//need if elses 
+}
+
+
 function countdown() {
   var secondsLeft = 10;
 
@@ -51,15 +58,15 @@ function countdown() {
     secondsLeft--;
     timerEl.textContent = secondsLeft + " Almost time to play.";
 
-    if(secondsLeft === 0) {
+    if (secondsLeft === 0) {
       // Stops execution of action at set interval
       clearInterval(timerInterval);
       // Calls function to create and append image
-      
+
     }
 
   }, 1000);
-  };
+};
 
 
 // Displays the message one word at a time
@@ -82,5 +89,7 @@ function displayMessage() {
 displayMessage();
 countdown();
 
-
+//var button = document.getElementById("start")
 // need to add an event listener to the start button
+
+button.addEventListener("click", modifyText, false)
