@@ -4,47 +4,65 @@ var timerEl = document.getElementById('countdown');
 var mainEl = document.getElementById('main');
 var button = document.getElementById("start")
 
+// console.log('your timerEl variable looks like', timerEl);
+// timerEl.textContent = "This is your timer element in HTML";
+// timerEl.style.backgroundColor = "aquamarine";
+// variables can be different types of data, i.e. number, function, Symbol, string, boolean, object, null, undefined, BigInt
+// furthermore, the data type can be primitive, or it can be an object.
 
-var message =
-  ' May the force be with you!';
+var message = ' May the force be with you!';
 var words = message.split(' ');
 
+// for(let i = 0; i < 10; i++) {
+//   console.log('i is', i);
+// }
+// console.log('after loop, i is', i);
+
 //attempting to grab alternative Attributes
+// FROM JAMES: Perhaps consider putting all your questions into an array, i.e. a list like []
 let question = {
   title:"What is the capital of California?",
-  alternatives:["San Fransisco", "San Diego", "Sacramento", "Las Vegas"]
-  correct answer : 2
+  alternatives: ["San Fransisco", "San Diego", "Sacramento", "Las Vegas"],
+  correctAnswer : 2
 };
 
-let question = {
-  title:"Which planet is the closest to the sun?",
-  alternatives:["Mercury", "Venus", "Earth", "Mars"]
-  correct answer : 0
-};
-let question = {
+// let question1 = {
+//   title:"Which planet is the closest to the sun?",
+//   alternatives:["Mercury", "Venus", "Earth", "Mars"]
+//   correctAnswer: 0
+// };
+
+let question2 = {
   title:"What mountain is tallest from base to peak?",
-  alternatives:["Mount Fuji", "Mauna Kea", "Mount wannahockaloogie", "Mount Everest"]
-  correct answer : 1
+  alternatives:["Mount Fuji", "Mauna Kea", "Mount wannahockaloogie", "Mount Everest"],
+  correctAnswer: 1
 };
-let question = {
+
+let question3 = {
   title:"What is the sum of the first 10 prime numbers?",
-  alternatives:[""10", "169", "144", "129""]
-  correct answer : 3
+  alternatives:["10", "169", "144", "129"],
+  correctAnswer: 3
 };
-let question = {
+
+let question4 = {
   title:"What year did joust come out?",
-  alternatives:[""1982", "1984", "1986", "1979""]
-  correct answer : 0
+  alternatives:["1982", "1984", "1986", "1979"],
+  correctAnswer: 0
 };
-function show question (q) {
+
+
+
+function showQuestion (q) {
   let titleDiv = document.getElementById("title")
   titleDiv.textContent=q.title;
-  let alts=document.querySelectorAll((".alternative");
-  alts.forEach(function)(element, index){
-    element.textContent=qalternatives[index];
-      });
+  let alts=document.querySelectorAll(".alternative");
+  // alts.forEach(function)(element, index){
+  //   element.textContent=qalternatives[index];
+  //     });
 }
-ShowQuestion(question);
+
+
+showQuestion(question);
 
 // creating a questions array
 var questions = [
@@ -85,8 +103,6 @@ function startgame(){
 //need to add event listeners to all of the questions
 //need if elses 
 }
-
-
 
 function countdown() {
   var secondsLeft = 10;
@@ -132,7 +148,7 @@ countdown();
 
 //Function to button
 function modifyText() {
-  button = document.getElementById("countdown");
+  console.log('modifyText ran');
   isNodeThree = t1.firstChild.nodeValue === "three";
   t1.firstChild.nodeValue = isNodeThree ? "two" : "three";
 }
@@ -142,4 +158,3 @@ function modifyText() {
 
 
 button.addEventListener("click", modifyText);
-
