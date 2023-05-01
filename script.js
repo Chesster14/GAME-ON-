@@ -4,22 +4,22 @@ var timerEl = document.getElementById('countdown');
 var mainEl = document.getElementById('main');
 var button = document.getElementById("start")
 
-// console.log('your timerEl variable looks like', timerEl);
-// timerEl.textContent = "This is your timer element in HTML";
-// timerEl.style.backgroundColor = "aquamarine";
+console.log('your timerEl variable looks like', timerEl);
+timerEl.textContent = "This is your timer element in HTML";
+timerEl.style.backgroundColor = "aquamarine";
 // variables can be different types of data, i.e. number, function, Symbol, string, boolean, object, null, undefined, BigInt
 // furthermore, the data type can be primitive, or it can be an object.
 
 var message = ' May the force be with you!';
 var words = message.split(' ');
 
-// for(let i = 0; i < 10; i++) {
+for(let i = 0; i < 10; i++) {
 //   console.log('i is', i);
-// }
+}
 // console.log('after loop, i is', i);
 
 //attempting to grab alternative Attributes
-// FROM JAMES: Perhaps consider putting all your questions into an array, i.e. a list like []
+//consider putting all questions into an array, i.e. a list like []
 let question = {
   title:"What is the capital of California?",
   alternatives: ["San Fransisco", "San Diego", "Sacramento", "Las Vegas"],
@@ -27,9 +27,11 @@ let question = {
 };
 
 // let question1 = {
-//   title:"Which planet is the closest to the sun?",
-//   alternatives:["Mercury", "Venus", "Earth", "Mars"]
-//   correctAnswer: 0
+// title:"Which planet is the closest to the sun?",
+ // alternatives:["Mercury", "Venus", "Earth", "Mars"]
+ // correctAnswer: 0
+
+ // fix above problem
 // };
 
 let question2 = {

@@ -1,4 +1,8 @@
+# Next
+Due April 27th
+
 WOW! I just tried to add more and everything blew up. I'm out of time to fix the homework assignment, so take it easy on me please.
+I had problems with eventListener and arrays
 
 # GAME-ON-
 
