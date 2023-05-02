@@ -26,13 +26,13 @@ let question = {
   correctAnswer : 2
 };
 
-// let question1 = {
-// title:"Which planet is the closest to the sun?",
- // alternatives:["Mercury", "Venus", "Earth", "Mars"]
- // correctAnswer: 0
+let question1 = {
+title:"Which planet is the closest to the sun?",
+alternatives:["Mercury", "Venus", "Earth", "Mars"],
+ correctAnswer: 0
 
  // fix above problem
-// };
+ };
 
 let question2 = {
   title:"What mountain is tallest from base to peak?",
